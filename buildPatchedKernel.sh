@@ -149,11 +149,11 @@ fi
 cd $INSTALL_DIR
 # Get the kernel sources; does not open up editor on .config file
 echo "${green}Getting Kernel sources${reset}"
-sudo ./scripts/getKernelSourcesNoGUI.sh
+#sudo ./scripts/getKernelSourcesNoGUI.sh
 
 echo "${green}Patching and configuring kernel${reset}"
-sudo ./scripts/configureKernel.sh
-sudo ./scripts/patchKernel.sh
+#sudo ./scripts/configureKernel.sh
+#sudo ./scripts/patchKernel.sh
 
 # Make the new Image and build the modules
 echo "${green}Building Kernel and Modules then installing Modules${reset}"
@@ -174,6 +174,6 @@ echo "${green}Please copy the new kernel Image file cover to the Image file on t
 echo "${green}The new kernel Image is in the directory named 'image'.${reset}"
 
 mkdir -p image
-cp /usr/src/kernel/kernel-4.9/arch/arm64/boot/Image ./image/Image
+cp /usr/src/kernel/kernel-4.4/arch/arm64/boot/Image ./image/Image
 
 

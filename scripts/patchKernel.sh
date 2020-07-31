@@ -28,13 +28,13 @@ cd /usr/src/kernel/kernel-4.4
 # ubuntu_codename is bionic for L4T 32.1 (Ubuntu 18.04)
 # Patching kernel for RealSense devices
 echo -e "\e[32mApplying Realsense-camera-formats patch\e[0m"
-patch -p1 < ${INSTALL_DIR}/patches/realsense-camera-formats_ubuntu-bionic-TX2-4.9.140.patch
+#patch -p1 < ${INSTALL_DIR}/patches/realsense-camera-formats_ubuntu-bionic-TX2-4.9.140.patch
 echo -e "\e[32mApplying realsense-metadata patch\e[0m"
-patch -p1 < ${INSTALL_DIR}/patches/realsense-metadata-ubuntu-bionic-TX2-4.9.140.patch
+#patch -p1 < ${INSTALL_DIR}/patches/realsense-metadata-ubuntu-bionic-TX2-4.9.140.patch
 echo -e "\e[32mApplying realsense-hid patch\e[0m"
 # This appears to be the closest
-patch -p1 < ${INSTALL_DIR}/patches/realsense-hid-ubuntu-bionic-TX2-4.9.140.patch
+#patch -p1 < ${INSTALL_DIR}/patches/realsense-hid-ubuntu-bionic-TX2-4.9.140.patch
 echo -e "\e[32mpowerlinefrequency-control-fix patch\e[0m"
-patch -p1 < ${LIBREALSENSE_DIR}/scripts/realsense-powerlinefrequency-control-fix.patch
+#patch -p1 < ${LIBREALSENSE_DIR}/scripts/realsense-powerlinefrequency-control-fix.patch
 
 

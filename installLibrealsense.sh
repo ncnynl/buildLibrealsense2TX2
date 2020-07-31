@@ -2,7 +2,7 @@
 # Builds the Intel Realsense library librealsense2 on a Jetson TX2 Developer Kit
 
 LIBREALSENSE_DIRECTORY=${HOME}/librealsense
-LIBREALSENSE_VERSION=v2.22.0
+LIBREALSENSE_VERSION=v2.36.0
 INSTALL_DIR=$PWD
 
 
@@ -73,11 +73,11 @@ git checkout $LIBREALSENSE_VERSION
 
 echo "${green}Applying Model-Views Patch${reset}"
 # The render loop of the post processing does not yield; add a sleep
-# patch -p1 -i $INSTALL_DIR/patches/model-views.patch
+#patch -p1 -i $INSTALL_DIR/patches/model-views.patch
 
 echo "${green}Applying Incomplete Frames Patch${reset}"
 # The Jetson tends to return incomplete frames at high frame rates; suppress error logging
-# patch -p1 -i $INSTALL_DIR/patches/incomplete-frame.patch
+#patch -p1 -i $INSTALL_DIR/patches/incomplete-frame.patch
 
 
 echo "${green}Applying udev rules${reset}"
